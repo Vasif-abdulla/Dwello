@@ -35,14 +35,14 @@ This project focuses on clean UI/UX, smooth responsive layouts, and pixel-perfec
 ## 📂 Folder Structure
 
 │── index.html </br>
-│── README.md
-│── /assets
-│ ├── /images
-│ └── /icons
-│── /css
-│ └── style.css
-│── /js
-│ └── index.js
+│── README.md </br>
+│── /assets </br>
+│ ├── /images </br>
+│ └── /icons </br>
+│── /css </br>
+│ └── style.css </br>
+│── /js </br>
+│ └── index.js </br>
 
 
 ## 🛠️ Installation / Usage
