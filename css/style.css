@@ -1686,7 +1686,7 @@ header {
   }
 
   .res-card {
-    max-width: 380px;
+    max-width: 90%;
     border-radius: 12px;
   }
   .res-info {
@@ -1835,7 +1835,7 @@ header {
   }
 
   .res-card {
-    max-width: 340px;
+    max-width: 90%;
   }
   .location-text {
     font-size: 16px;
@@ -1947,7 +1947,7 @@ header {
   }
 
   .res-card {
-    max-width: 310px;
+    max-width: 90%;
   }
   .res-info {
     padding: 10px 12px;
