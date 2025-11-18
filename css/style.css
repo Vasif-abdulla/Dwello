@@ -37,6 +37,8 @@ body {
   color: var(--text-color);
   line-height: 1.6;
   font-weight: 500;
+  overflow-x: clip;
+  width: 100%;
 }
 
 img {
@@ -73,6 +75,8 @@ h6 {
 
 header {
   background: var(--bg-color);
+  position: relative;
+  z-index: 100;
 }
 .nav {
   display: flex;
@@ -555,7 +559,7 @@ header {
 .t-hero {
   width: 100%;
   height: auto;
-  aspect-ratio: 382 / 169;   
+  aspect-ratio: 382 / 169;
   object-fit: cover;
 }
 
@@ -679,7 +683,7 @@ header {
 /* Heading */
 .support-title {
   font-size: 40px;
-  font-weight: 800;                 
+  font-weight: 800;
   line-height: 1.25;
   margin: 0 0 30px;
 }
@@ -700,12 +704,12 @@ header {
 }
 
 .point .tick {
-  width: 26px;                     
+  width: 26px;
   height: 26px;
 }
 
 .point span {
-  font-size: 18px;                  
+  font-size: 18px;
   font-weight: 700;
 }
 
@@ -720,8 +724,8 @@ header {
 /* Input with left icon */
 .input-wrap {
   position: relative;
-  width: 505px;                     
-  height: 58px;                     
+  width: 505px;
+  height: 58px;
 }
 
 .mail-icon {
@@ -729,7 +733,7 @@ header {
   left: 14px;
   top: 50%;
   transform: translateY(-50%);
-  width: 22px;                      
+  width: 22px;
   height: 22px;
   pointer-events: none;
 }
@@ -740,12 +744,12 @@ header {
   border: none;
   outline: none;
   border-radius: 12px;
-  padding: 0 16px 0 48px;           
-  background: var(--primary-color);              
-  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  padding: 0 16px 0 48px;
+  background: var(--primary-color);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
   color: var(--text-color);
   font-size: 18px;
-  font-weight: 600;                 
+  font-weight: 600;
 }
 
 .email-input::placeholder {
@@ -756,8 +760,8 @@ header {
 
 /* Submit button */
 .cta-btn {
-  width: 168px;                     
-  height: 58px;                     
+  width: 168px;
+  height: 58px;
   border: none;
   border-radius: 10px;
   background: var(--text-color);
@@ -768,15 +772,15 @@ header {
 }
 
 /* Footer base */
-.site-footer{
-  background: var(--primary-color); 
-  color: var(--text-color);      
+.site-footer {
+  background: var(--primary-color);
+  color: var(--text-color);
   font-family: "Montserrat", sans-serif;
   padding: 70px 0 100px;
 }
 
 /* Grid layout */
-.footer-grid{
+.footer-grid {
   display: grid;
   grid-template-columns: 1.3fr 1fr 1fr 1fr 1fr;
   gap: 48px 56px;
@@ -784,32 +788,34 @@ header {
 }
 
 /* Brand */
-.brand-link{ display: inline-block; }
-.brand-logo{
+.brand-link {
+  display: inline-block;
+}
+.brand-logo {
   width: 93px;
   height: 29px;
   object-fit: contain;
   display: block;
-  filter: drop-shadow(0 0 0 rgba(0,0,0,0)); 
+  filter: drop-shadow(0 0 0 rgba(0, 0, 0, 0));
 }
 
-.brand-text{
+.brand-text {
   margin-top: 24px;
   max-width: 280px;
-  font-size: 18px;     
-  font-weight: 700;    
+  font-size: 18px;
+  font-weight: 700;
   line-height: 1.5;
 }
 
 /* Column titles */
-.footer-title{
-  font-size: 22px;     
-  font-weight: 700;    
+.footer-title {
+  font-size: 22px;
+  font-weight: 700;
   margin: 6px 0 18px;
 }
 
 /* Links list */
-.footer-links{
+.footer-links {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -817,51 +823,51 @@ header {
   gap: 18px;
 }
 
-.footer-links a{
+.footer-links a {
   text-decoration: none;
-  color: #4F3527;
-  font-size: 18px;     
-  font-weight: 700;    
-  cursor: pointer;    
-  transition: opacity .2s ease, transform .2s ease;
+  color: #4f3527;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-.footer-links a:hover{ opacity: .85; }
-.footer-links a:active{ transform: scale(.98); }
+.footer-links a:hover {
+  opacity: 0.85;
+}
+.footer-links a:active {
+  transform: scale(0.98);
+}
 
 /* Social links (icon + text) */
-.social-links a{
+.social-links a {
   display: inline-flex;
   align-items: center;
   gap: 12px;
 }
-.social-links a span{
+.social-links a span {
   text-decoration: none;
-  color: #4F3527;
-  font-size: 18px;     
-  font-weight: 700;    
-  cursor: pointer;    
-  transition: opacity .2s ease, transform .2s ease;
+  color: #4f3527;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
-.social-icon{
-  width: 24px;         
-  height: 24px;        
+.social-icon {
+  width: 24px;
+  height: 24px;
   object-fit: contain;
   display: inline-block;
 }
-
-
-
-
-
-
-
-
 
 /* ========================= */
 /* ✅ 1280px (Large screens) */
 /* ========================= */
 @media (max-width: 1280px) {
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
   .wrapper {
     width: 92%;
   }
@@ -936,28 +942,54 @@ header {
     width: 360px;
     height: auto;
   }
-  .testimonials { padding: 64px 0 84px; }
-  .t-title { font-size: 38px; margin-bottom: 50px; }
-  .t-cards { gap: 24px; }
-  .t-card { width: 360px; height: auto; }
-  .support-cta { padding: 80px 0 84px; }
-  .support-title { font-size: 38px; margin-bottom: 26px; }
-  .cta-points { gap: 28px; margin-bottom: 50px; }
-  .site-footer { padding: 64px 0 88px; }
+  .testimonials {
+    padding: 64px 0 84px;
+  }
+  .t-title {
+    font-size: 38px;
+    margin-bottom: 50px;
+  }
+  .t-cards {
+    gap: 24px;
+  }
+  .t-card {
+    width: 360px;
+    height: auto;
+  }
+  .support-cta {
+    padding: 80px 0 84px;
+  }
+  .support-title {
+    font-size: 38px;
+    margin-bottom: 26px;
+  }
+  .cta-points {
+    gap: 28px;
+    margin-bottom: 50px;
+  }
+  .site-footer {
+    padding: 64px 0 88px;
+  }
   .footer-grid {
     gap: 40px 48px;
     grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr; /* still 5 columns */
   }
-  .footer-title { font-size: 21px; }
-  .footer-links a { font-size: 17px; }
-
-
+  .footer-title {
+    font-size: 21px;
+  }
+  .footer-links a {
+    font-size: 17px;
+  }
 }
 
 /* ========================= */
 /* ✅ 1110px (Medium-large) */
 /* ========================= */
 @media (max-width: 1110px) {
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
   .text-area h1 {
     font-size: 58px;
   }
@@ -1050,29 +1082,66 @@ header {
   .price {
     font-size: 21px;
   }
-  .t-title { font-size: 36px; }
-  .t-cards { gap: 22px; }
-  .t-card { width: 340px; }
-  .t-avatar { width: 56px; height: 56px; }
-  .t-name { font-size: 19px; }
-  .t-loc, .t-rate span, .t-text { font-size: 15.5px; }
-  .support-title { font-size: 36px; }
-  .cta-points { gap: 24px; }
-  .input-wrap { width: 480px; }  
+  .t-title {
+    font-size: 36px;
+  }
+  .t-cards {
+    gap: 22px;
+  }
+  .t-card {
+    width: 340px;
+  }
+  .t-avatar {
+    width: 56px;
+    height: 56px;
+  }
+  .t-name {
+    font-size: 19px;
+  }
+  .t-loc,
+  .t-rate span,
+  .t-text {
+    font-size: 15.5px;
+  }
+  .support-title {
+    font-size: 36px;
+  }
+  .cta-points {
+    gap: 24px;
+  }
+  .input-wrap {
+    width: 480px;
+  }
   .footer-grid {
     grid-template-columns: 1.4fr 1fr 1fr 1fr; /* brand + 3 columns */
     gap: 36px 40px;
   }
-  .brand-text { max-width: 320px; }
-  .footer-title { font-size: 20px; }
-  .footer-links a { font-size: 17px; }
-  .social-icon { width: 26px; height: 26px; }  
+  .brand-text {
+    max-width: 320px;
+  }
+  .footer-title {
+    font-size: 20px;
+  }
+  .footer-links a {
+    font-size: 17px;
+  }
+  .social-icon {
+    width: 26px;
+    height: 26px;
+  }
 }
 
 /* ========================= */
 /* ✅ 980px (Tablet landscape) */
 /* ========================= */
 @media (max-width: 980px) {
+  .logo {
+    width: 80px;
+    padding: 0 0 10px;
+  }
+  .nav-center ul {
+    gap: 10px;
+  }
   .spotlight-content {
     flex-direction: column;
     text-align: center;
@@ -1216,33 +1285,74 @@ header {
   .price {
     font-size: 20px;
   }
-  .t-title { font-size: 34px; margin-bottom: 40px; }
-  .t-cards { justify-content: center; gap: 20px; }
-  .t-card { width: calc(50% - 12px); height: auto; }
-  .t-body { padding: 16px 14px; gap: 10px; }
-  .t-avatar { width: 54px; height: 54px; }
-  .t-rate { width: 56px; height: 24px; }
-  .t-rate img { width: 18px; height: 18px; }
-  .t-rate span { font-size: 15px; }  
-   .support-title { font-size: 34px; }
+  .t-title {
+    font-size: 34px;
+    margin-bottom: 40px;
+  }
+  .t-cards {
+    justify-content: center;
+    gap: 20px;
+  }
+  .t-card {
+    width: calc(50% - 12px);
+    height: auto;
+  }
+  .t-body {
+    padding: 16px 14px;
+    gap: 10px;
+  }
+  .t-avatar {
+    width: 54px;
+    height: 54px;
+  }
+  .t-rate {
+    width: 56px;
+    height: 24px;
+  }
+  .t-rate img {
+    width: 18px;
+    height: 18px;
+  }
+  .t-rate span {
+    font-size: 15px;
+  }
+  .support-title {
+    font-size: 34px;
+  }
   .cta-points {
     gap: 20px;
-    flex-wrap: wrap;                 /* allow wrap if needed */
+    flex-wrap: wrap; /* allow wrap if needed */
   }
-  .point span { font-size: 17px; }
-  .input-wrap { width: 440px; }
-  .site-footer { padding: 56px 0 76px; }
+  .point span {
+    font-size: 17px;
+  }
+  .input-wrap {
+    width: 440px;
+  }
+  .site-footer {
+    padding: 56px 0 76px;
+  }
   .footer-grid {
     grid-template-columns: 1fr 1fr 1fr; /* 3 columns */
     gap: 32px;
   }
-  .footer-brand { grid-column: 1 / -1; } /* brand full width row */
-  .brand-text { max-width: 100%; }
-  .footer-title { font-size: 19px; margin-bottom: 14px; }
-  .footer-links { gap: 14px; }
-  .footer-links a { font-size: 16.5px; }  
+  .footer-brand {
+    grid-column: 1 / -1;
+  } /* brand full width row */
+  .brand-text {
+    max-width: 100%;
+  }
+  .footer-title {
+    font-size: 19px;
+    margin-bottom: 14px;
+  }
+  .footer-links {
+    gap: 14px;
+  }
+  .footer-links a {
+    font-size: 16.5px;
+  }
 }
-
 
 /* ========================= */
 /* ✅ 768px (Tablet portrait) */
@@ -1368,18 +1478,43 @@ header {
   .price {
     font-size: 19px;
   }
-  .testimonials { padding: 56px 0 74px; }
-  .t-title { font-size: 32px; }
-  .t-cards { gap: 16px; }
-  .t-card { width: calc(50% - 10px); border-radius: 14px; }
-  .t-name { font-size: 18px; }
-  .t-loc, .t-text { font-size: 15px; }
-  .support-cta { padding: 64px 0 76px; }
-  .support-title { font-size: 32px; line-height: 1.3; }
-  .cta-points { gap: 16px; }
-  .point .tick { width: 24px; height: 24px; }
-  .point span { font-size: 16.5px; }
-
+  .testimonials {
+    padding: 56px 0 74px;
+  }
+  .t-title {
+    font-size: 32px;
+  }
+  .t-cards {
+    gap: 16px;
+  }
+  .t-card {
+    width: calc(50% - 10px);
+    border-radius: 14px;
+  }
+  .t-name {
+    font-size: 18px;
+  }
+  .t-loc,
+  .t-text {
+    font-size: 15px;
+  }
+  .support-cta {
+    padding: 64px 0 76px;
+  }
+  .support-title {
+    font-size: 32px;
+    line-height: 1.3;
+  }
+  .cta-points {
+    gap: 16px;
+  }
+  .point .tick {
+    width: 24px;
+    height: 24px;
+  }
+  .point span {
+    font-size: 16.5px;
+  }
 
   .cta-form {
     flex-direction: column;
@@ -1388,21 +1523,34 @@ header {
     max-width: 560px;
     margin: 0 auto;
   }
-  .input-wrap { width: 100%; }
+  .input-wrap {
+    width: 100%;
+  }
   .cta-btn {
     width: 100%;
-    max-width: 220px;                
+    max-width: 220px;
     margin: 0 auto;
   }
   .footer-grid {
     grid-template-columns: 1fr 1fr;
     gap: 28px;
   }
-  .footer-brand { grid-column: 1 / -1; }
-  .brand-text { font-size: 17px; }
-  .footer-title { font-size: 18px; }
-  .footer-links a { font-size: 16px; }
-  .social-icon { width: 24px; height: 24px; }    
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+  .brand-text {
+    font-size: 17px;
+  }
+  .footer-title {
+    font-size: 18px;
+  }
+  .footer-links a {
+    font-size: 16px;
+  }
+  .social-icon {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 /* ========================= */
@@ -1542,12 +1690,17 @@ header {
   .res-btn {
     width: 98px;
     height: 40px;
-  } 
+  }
   .price {
     font-size: 20px;
   }
-  .testimonials { padding: 48px 0 64px; }
-  .t-title { font-size: 30px; margin-bottom: 28px; }
+  .testimonials {
+    padding: 48px 0 64px;
+  }
+  .t-title {
+    font-size: 30px;
+    margin-bottom: 28px;
+  }
 
   .t-cards {
     flex-direction: column;
@@ -1561,29 +1714,67 @@ header {
     margin-bottom: 0;
   }
 
-  .t-body { padding: 16px; }
-  .t-user { gap: 10px; }
-  .t-avatar { width: 52px; height: 52px; }
-  .t-rate { width: 56px; height: 24px; } 
-  .support-title { font-size: 30px; }
+  .t-body {
+    padding: 16px;
+  }
+  .t-user {
+    gap: 10px;
+  }
+  .t-avatar {
+    width: 52px;
+    height: 52px;
+  }
+  .t-rate {
+    width: 56px;
+    height: 24px;
+  }
+  .support-title {
+    font-size: 30px;
+  }
   .cta-points {
-    flex-direction: column;         
+    flex-direction: column;
     gap: 10px;
     margin-bottom: 24px;
   }
-  .point span { font-size: 16px; }
+  .point span {
+    font-size: 16px;
+  }
   .email-input,
-  .email-input::placeholder { font-size: 16px; }
+  .email-input::placeholder {
+    font-size: 16px;
+  }
 
-  .mail-icon { left: 12px; width: 20px; height: 20px; }
-  .input-wrap { height: 56px; }
-  .cta-btn { height: 56px; }   
-  .site-footer { padding: 48px 0 64px; }
-  .footer-grid { gap: 24px; }
-  .brand-logo { width: 93px; height: 29px; } /* keep crisp */
-  .brand-text { font-size: 16.5px; line-height: 1.5; }
-  .footer-title { font-size: 17.5px; }
-  .footer-links a { font-size: 15.5px; }
+  .mail-icon {
+    left: 12px;
+    width: 20px;
+    height: 20px;
+  }
+  .input-wrap {
+    height: 56px;
+  }
+  .cta-btn {
+    height: 56px;
+  }
+  .site-footer {
+    padding: 48px 0 64px;
+  }
+  .footer-grid {
+    gap: 24px;
+  }
+  .brand-logo {
+    width: 93px;
+    height: 29px;
+  } /* keep crisp */
+  .brand-text {
+    font-size: 16.5px;
+    line-height: 1.5;
+  }
+  .footer-title {
+    font-size: 17.5px;
+  }
+  .footer-links a {
+    font-size: 15.5px;
+  }
 }
 
 /* ========================= */
@@ -1593,7 +1784,9 @@ header {
   .nav-center {
     display: none;
   }
-
+  .nav-right img {
+    display: none;
+  }
   .text-area h1 {
     font-size: 36px;
   }
@@ -1713,34 +1906,81 @@ header {
   .price {
     font-size: 19px;
   }
-  .t-title { font-size: 28px; }
-  .t-card { width: 90%; border-radius: 12px; }
-  .t-avatar { width: 50px; height: 50px; }
-  .t-name { font-size: 17px; }
-  .t-loc, .t-rate span, .t-text { font-size: 14.5px; }
-  .t-btn { width: 52px; height: 52px; }
-  .chev { width: 11px; height: 11px; }
-  .support-title { font-size: 28px; }
-  .point .tick { width: 22px; height: 22px; }
-  .point span { font-size: 15.5px; }
+  .t-title {
+    font-size: 28px;
+  }
+  .t-card {
+    width: 90%;
+    border-radius: 12px;
+  }
+  .t-avatar {
+    width: 50px;
+    height: 50px;
+  }
+  .t-name {
+    font-size: 17px;
+  }
+  .t-loc,
+  .t-rate span,
+  .t-text {
+    font-size: 14.5px;
+  }
+  .t-btn {
+    width: 52px;
+    height: 52px;
+  }
+  .chev {
+    width: 11px;
+    height: 11px;
+  }
+  .support-title {
+    font-size: 28px;
+  }
+  .point .tick {
+    width: 22px;
+    height: 22px;
+  }
+  .point span {
+    font-size: 15.5px;
+  }
 
-  .input-wrap { height: 54px; }
-  .email-input { padding-left: 44px; }
-  .cta-btn { width: 100%; max-width: 200px; height: 54px; } 
+  .input-wrap {
+    height: 54px;
+  }
+  .email-input {
+    padding-left: 44px;
+  }
+  .cta-btn {
+    width: 100%;
+    max-width: 200px;
+    height: 54px;
+  }
   .footer-grid {
     grid-template-columns: 1fr; /* stack everything */
     gap: 22px;
   }
-  .footer-title { font-size: 17px; }
-  .footer-links a { font-size: 15px; }
-  .social-links a { gap: 10px; }
-  .social-icon { width: 22px; height: 22px; }   
+  .footer-title {
+    font-size: 17px;
+  }
+  .footer-links a {
+    font-size: 15px;
+  }
+  .social-links a {
+    gap: 10px;
+  }
+  .social-icon {
+    width: 22px;
+    height: 22px;
+  }
 }
 
 /* ========================= */
 /* ✅ 360px (Small mobile) */
 /* ========================= */
 @media (max-width: 360px) {
+  .nav-right img {
+    display: none;
+  }
   .text-area h1 {
     font-size: 30px;
   }
@@ -1846,22 +2086,58 @@ header {
   .price {
     font-size: 18px;
   }
-  .t-title { font-size: 26px; }
-  .t-card { max-width: 90% }
-  .t-avatar { width: 46px; height: 46px; }
-  .t-name { font-size: 16px; }
-  .t-loc, .t-text { font-size: 14px; }
-  .t-rate { width: 52px; height: 22px; }
-  .t-rate img { width: 16px; height: 16px; }  
-  .support-title { font-size: 26px; }
-  .point span { font-size: 15px; }
-  .mail-icon { width: 18px; height: 18px; left: 10px; }
+  .t-title {
+    font-size: 26px;
+  }
+  .t-card {
+    max-width: 90%;
+  }
+  .t-avatar {
+    width: 46px;
+    height: 46px;
+  }
+  .t-name {
+    font-size: 16px;
+  }
+  .t-loc,
+  .t-text {
+    font-size: 14px;
+  }
+  .t-rate {
+    width: 52px;
+    height: 22px;
+  }
+  .t-rate img {
+    width: 16px;
+    height: 16px;
+  }
+  .support-title {
+    font-size: 26px;
+  }
+  .point span {
+    font-size: 15px;
+  }
+  .mail-icon {
+    width: 18px;
+    height: 18px;
+    left: 10px;
+  }
   .email-input,
-  .email-input::placeholder { font-size: 15.5px; }
-  .site-footer { padding: 44px 0 56px; }
-  .brand-text { font-size: 15.5px; }
-  .footer-title { font-size: 16px; }
-  .footer-links a { font-size: 14.5px; }
+  .email-input::placeholder {
+    font-size: 15.5px;
+  }
+  .site-footer {
+    padding: 44px 0 56px;
+  }
+  .brand-text {
+    font-size: 15.5px;
+  }
+  .footer-title {
+    font-size: 16px;
+  }
+  .footer-links a {
+    font-size: 14.5px;
+  }
 }
 
 /* ========================= */
@@ -1972,19 +2248,55 @@ header {
   .price {
     font-size: 17px;
   }
-  .t-title { font-size: 24px; }
-  .t-card { max-width: 90%; }
-  .t-body { padding: 14px; }
-  .t-avatar { width: 44px; height: 44px; }
-  .t-name { font-size: 15px; }
-  .t-loc, .t-text, .t-rate span { font-size: 13.5px; }
-  .t-btn { width: 48px; height: 48px; }
-  .support-title { font-size: 24px; }
-  .point span { font-size: 14.5px; }
-  .input-wrap { height: 52px; }
-  .cta-btn { height: 52px; max-width: 180px; }  
-  .brand-text { font-size: 15px; }
-  .footer-title { font-size: 15.5px; }
-  .footer-links a { font-size: 14px; }
-  .social-icon { width: 20px; height: 20px; }  
+  .t-title {
+    font-size: 24px;
+  }
+  .t-card {
+    max-width: 90%;
+  }
+  .t-body {
+    padding: 14px;
+  }
+  .t-avatar {
+    width: 44px;
+    height: 44px;
+  }
+  .t-name {
+    font-size: 15px;
+  }
+  .t-loc,
+  .t-text,
+  .t-rate span {
+    font-size: 13.5px;
+  }
+  .t-btn {
+    width: 48px;
+    height: 48px;
+  }
+  .support-title {
+    font-size: 24px;
+  }
+  .point span {
+    font-size: 14.5px;
+  }
+  .input-wrap {
+    height: 52px;
+  }
+  .cta-btn {
+    height: 52px;
+    max-width: 180px;
+  }
+  .brand-text {
+    font-size: 15px;
+  }
+  .footer-title {
+    font-size: 15.5px;
+  }
+  .footer-links a {
+    font-size: 14px;
+  }
+  .social-icon {
+    width: 20px;
+    height: 20px;
+  }
 }
